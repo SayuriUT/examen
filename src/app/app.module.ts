@@ -9,13 +9,15 @@ import { HomePage } from '../pages/home/home';
 
 import { RegistroPage } from '../pages/registro/registro';
 import { LoginPage } from '../pages/login/login';
+import { FotoPage } from '../pages/foto/foto';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RegistroPage,
-    LoginPage
+    LoginPage,
+    FotoPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     HomePage,
     RegistroPage,
-    LoginPage
+    LoginPage,
+    FotoPage
   ],
   providers: [
     StatusBar,
