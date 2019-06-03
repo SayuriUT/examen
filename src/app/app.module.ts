@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Geolocation } from '@ionic-native/geolocation';
+import { Camera } from '@ionic-native/camera';
 
 import { RegistroPage } from '../pages/registro/registro';
 import { LoginPage } from '../pages/login/login';
@@ -34,7 +36,9 @@ import { FotoPage } from '../pages/foto/foto';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera,
+    Geolocation
   ]
 })
 export class AppModule {}

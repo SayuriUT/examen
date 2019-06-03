@@ -10,7 +10,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding style="background-color: #92632C">
   <img src={{imagen}}>
 </ion-content>
 
@@ -19,6 +19,9 @@
     <ion-input placeholder="Tipo de arbol" [(ngModel)]= "tipo"></ion-input>
     <ion-input placeholder="Ancho de copa" [(ngModel)]= "copa"></ion-input>
     <ion-input placeholder="Ancho de tronco" [(ngModel)]= "tronco"></ion-input>
+    <ion-card>
+      Geolocalización: {{latitud}}, {{longitud}}
+    </ion-card>
     <button ion-button icon-only (click)="subirImagen()">
       <ion-icon name="send"></ion-icon>
     </button>

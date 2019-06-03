@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title style="background-color: #487031">
       Árboles
     </ion-title>
     <ion-buttons end>
@@ -11,14 +11,14 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding style="background-color: #212922">
   <ion-card *ngFor="let item of items">
     <img src={{item.url}}>
     <ion-card-content>
       Tipo: {{item.tipo}}
       Copa: {{item.copa}}
       Tronco: {{item.tronco}}
-      Posición: {{item.posicion}}
+      Posición: {{item.latitud}}, {{item.longitud}}
     </ion-card-content>
   </ion-card>
 </ion-content>
